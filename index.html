@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter-Strike Ranking | World Ranking | HLTV.org</title>
+    <link rel="stylesheet" href="public/css/stylesheet.css" />
+    <link rel="stylesheet" href="public/css/index.css" />
+    <link rel="stylesheet" href="public/css/nav.css" />
+    <link rel="stylesheet" href="public/css/drop.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-left">
+        <div class="nav-list">
+          <a href="#">News</a>
+          <a href="#">Matches</a>
+          <a href="#">Results</a>
+          <div class="drop">
+            <a class="dropEventl" href="#">Events ▼</a>
+            <div class="dropEvent">
+              <a class="evlink" href="#">All events</a>
+              <a class="evlink" href="#">Ongoing</a>
+              <a class="evlink" href="#">Archive</a>
+              <a class="evlink" href="#">Calendar</a>
+              <a class="evlink" href="#">ESL Katowice</a>
+            </div>
+          </div>
+          <div class="drop">
+            <a class="dropEventl" href="#">Players ▼</a>
+            <div class="dropEvent">
+              <a class="evlink" href="#">Players overview</a>
+              <a class="evlink" href="#">Transfers</a>
+              <a class="evlink" href="#">MVP's</a>
+              <a class="evlink" href="#">EVP's</a>
+              <a class="evlink" href="#">Top20</a>
+            </div>
+          </div>
+          <div class="drop">
+            <a class="dropEventl" href="#">Stats ▼</a>
+            <div class="dropEvent">
+              <a class="evlink" href="#">Stats overview</a>
+              <a class="evlink" href="#">Top players</a>
+              <a class="evlink" href="#">Top teams</a>
+              <a class="evlink" href="#">Maps</a>
+            </div>
+          </div>
+          <div class="drop">
+            <a class="dropEventl" href="#">Fantasy ▼</a>
+            <div class="dropEvent">
+              <a class="evlink" href="#">fantasy overview</a>
+              <a class="evlink" href="#">ESL Challenger</a>
+            </div>
+          </div>
+          <div class="drop">
+            <a class="dropEventl" href="#">Forum ▼</a>
+            <div class="dropEvent">
+              <a class="evlink" href="#">All forums</a>
+              <a class="evlink" href="#">Counter-Strike</a>
+              <a class="evlink" href="#">Fantasy</a>
+              <a class="evlink" href="#">Batting</a>
+            </div>
+          </div>
+          <div class="drop">
+            <a class="dropEventl" href="#">Media ▼</a>
+            <div class="dropEvent">
+              <a class="evlink" href="#">HLTV Confirmed</a>
+              <a class="evlink" href="#">Galleries</a>
+            </div>
+          </div>
+          <div class="drop">
+            <a class="dropEventl" href="#">Betting ▼</a>
+            <div class="dropEvent">
+              <a class="evlink">Betting analytics</a>
+              <a class="evlink">compare odds</a>
+              <a class="evlink">Betting sites</a>
+            </div>
+          </div>
+          <a href="main.html">Live</a>
+          <a href="main.html">Major</a>
+        </div>
+      </div>
+      <div class="nav-right">
+        <div class="nav-search">
+          <input for="search" type="search" placeholder="Search..." />
+          <a id="search" href="">
+            <div class="imgA">
+              <img
+                src="public/img/search.png"
+                style="height: 1em"
+                alt=""
+              /></div
+          ></a>
+        </div>
+        <a class="signLink" href="index.html">Sign in</a>
+        <div class="settings">
+          <a href="#">
+            <img
+              src="public/img/settings-sharp.png"
+              style="height: 1em"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="cont">
+      <div class="logo">
+        <a href="#">
+          <img src="public/img/logo.png" style="height: 5em" alt="" />
+        </a>
+      </div>
+      <div class="main-cont">
+        <div class="nav-filt">
+          <p>FILTERS</p>
+          <div class="list-year">
+            <div class="filt-point">
+              <a href="#">Year</a>
+              <img src="public/img/upArrow.png" style="height: 1em" alt="" />
+            </div>
+            <a
+              class="evlink"
+              style="
+                font-weight: bold;
+                color: #87a3bf;
+                border-bottom: 1px dotted #495867;
+              "
+              href="#"
+              >2024</a
+            >
+            <a class="evlink" style="border-bottom: 1px dotted #495867" href="#"
+              >2023</a
+            >
+            <a class="evlink" style="border-bottom: 1px dotted #495867" href="#"
+              >2022</a
+            >
+            <a class="evlink" style="border-bottom: 1px dotted #495867" href="#"
+              >2021</a
+            >
+            <a class="evlink" style="border-bottom: 1px dotted #495867" href="#"
+              >2020</a
+            >
+          </div>
+          <div class="list-month">
+            <div class="filt-point">
+              <a href="#">Month</a>
+              <img src="public/img/upArrow.png" style="height: 1em" alt="" />
+            </div>
+            <a
+              class="evlink"
+              style="
+                font-weight: bold;
+                color: #87a3bf;
+                border-bottom: 1px dotted #495867;
+              "
+              href="#"
+              >October</a
+            >
+            <a class="evlink" style="border-bottom: 1px dotted #495867" href="#"
+              >September</a
+            >
+            <a class="evlink" style="border-bottom: 1px dotted #495867" href="#"
+              >August</a
+            >
+            <a class="evlink" style="border-bottom: 1px dotted #495867" href="#"
+              >July</a
+            >
+            <a class="evlink" style="border-bottom: 1px dotted #495867" href="#"
+              >June</a
+            >
+          </div>
+          <div class="list-day">
+            <div class="filt-point">
+              <a href="#">Day</a>
+              <img src="public/img/upArrow.png" style="height: 1em" alt="" />
+            </div>
+            <a
+              class="evlink"
+              style="
+                font-weight: bold;
+                color: #87a3bf;
+                border-bottom: 1px dotted #495867;
+              "
+              href="#"
+              >21st</a
+            >
+            <a class="evlink" style="border-bottom: 1px dotted #495867" href="#"
+              >14th</a
+            >
+            <a class="evlink" style="border-bottom: 1px dotted #495867" href="#"
+              >7th</a
+            >
+          </div>
+        </div>
+        <div class="main-info">
+          <div class="ranks">
+            <a
+              class="ranktype"
+              href="#"
+              style="font-weight: bold; border-bottom: 3px solid #435971"
+            >
+              <img
+                src="public/img/logoshort.png"
+                style="height: 1.2em; margin-right: 0.5em"
+                alt=""
+              />World ranking
+            </a>
+            <a class="ranktype" href="#">
+              <img
+                src="public/img/logoshort.png"
+                style="height: 1.2em; margin-right: 0.5em"
+                alt=""
+              />Regional rankings
+            </a>
+            <a
+              class="ranktype"
+              style="
+                background-color: #44413f;
+                border-bottom: 3px solid #5c4b39;
+              "
+              href="#"
+            >
+              <img
+                src="public/img/logocs2.jpg"
+                style="height: 1.2em; margin-right: 0.5em"
+                alt=""
+              />
+              Global Valve ranking
+            </a>
+            <a
+              class="ranktype"
+              style="
+                background-color: #44413f;
+                border-bottom: 3px solid #5c4b39;
+              "
+              href="#"
+            >
+              <img
+                src="public/img/logocs2.jpg"
+                style="height: 1.2em; margin-right: 0.5em"
+                alt=""
+              />Region Valve rankings
+            </a>
+          </div>
+          <div class="header">
+            <h2>Counter-Strike World ranking on October 21st, 2024</h2>
+            <div class="arrbtn">
+              <a href="#">
+                <img
+                  src="public/img/leftArrow.png"
+                  style="height: 2em"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="public/img/rightArrow.png"
+                  style="height: 2em"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div class="leaderboard">
+            <div class="placeblock">
+              <a class="blockhead" href="#">
+                <div class="leftblock">
+                  <p class="place">#1</p>
+                  <img
+                    src="https://img-cdn.hltv.org/teamlogo/9iMirAi7ArBLNU8p3kqUTZ.svg?ixlib=java-2.1.0&s=4dd8635be16122656093ae9884675d0c"
+                    style="height: 2em; margin: 1em 0.5em 1em 0"
+                    alt=""
+                  />
+                  <p style="margin-right: 0.3em">Natus Vincere</p>
+                  <p class="points">(1000 HLTV points)</p>
+                </div>
+                <div class="rightblock">
+                  <p>-</p>
+                </div>
+              </a>
+              <div class="playersblock">
+                <a class="player" href="#">
+                  <div class="photo">
+                    <img
+                      src="https://img-cdn.hltv.org/playerbodyshot/CS5O_NY6wiy7_JG2V2GWYD.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=121%2C4%2C467%2C467&w=200&s=7c1eb4134abdbc971540e91c1ef46a76"
+                      style="height: 10em"
+                      alt=""
+                    />
+                  </div>
+                  <div class="infopl">
+                    <img
+                      src="https://www.hltv.org/img/static/flags/30x20/FI.gif"
+                      style="height: 0.9em"
+                      alt=""
+                    />
+                    <p>Aleksib</p>
+                  </div>
+                </a>
+                <a href="" class="player">
+                  <div class="photo">
+                    <img
+                      src="https://img-cdn.hltv.org/playerbodyshot/KbJzukpxyrqGUtvR571r1Z.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=121%2C0%2C474%2C474&w=200&s=f10bf748a48c24519f10f4d4250ed453"
+                      style="height: 10em"
+                      alt=""
+                    />
+                  </div>
+                  <div class="infopl">
+                    <img
+                      src="https://www.hltv.org/img/static/flags/30x20/RO.gif"
+                      style="height: 0.9em"
+                      alt=""
+                    />
+                    <p>iM</p>
+                  </div>
+                </a>
+                <a href="#" class="player">
+                  <div class="photo">
+                    <img
+                      src="https://img-cdn.hltv.org/playerbodyshot/5ce_52SMMLOXUPHFmuppeo.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=132%2C0%2C467%2C467&w=200&s=dffba8a19ec27c3d856f85c8fef2a228"
+                      style="height: 10em"
+                      alt=""
+                    />
+                  </div>
+                  <div class="infopl">
+                    <img
+                      src="https://www.hltv.org/img/static/flags/30x20/UA.gif"
+                      style="height: 0.9em"
+                      alt=""
+                    />
+                    <p>b1t</p>
+                  </div>
+                </a>
+                <a href="#" class="player">
+                  <div class="photo">
+                    <img
+                      src="https://img-cdn.hltv.org/playerbodyshot/LEVIO874MT6HpnUZqZgIAa.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=121%2C0%2C467%2C467&w=200&s=7ae31c5f13b68dbc01c277800f0787a5"
+                      style="height: 10em"
+                      alt=""
+                    />
+                  </div>
+                  <div class="infopl">
+                    <img
+                      src="https://www.hltv.org/img/static/flags/30x20/LT.gif"
+                      style="height: 0.9em"
+                      alt=""
+                    />
+                    <p>jL</p>
+                  </div>
+                </a>
+                <a href="#" class="player" style="margin-right: 0">
+                  <div class="photo">
+                    <img
+                      src="https://img-cdn.hltv.org/playerbodyshot/-_UTOwRq10TZ6Fzs_Gp_m1.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=121%2C0%2C467%2C467&w=200&s=878687962f900fc6d3e3f5016b5e9b07"
+                      style="height: 10em"
+                      alt=""
+                    />
+                  </div>
+                  <div class="infopl">
+                    <img
+                      src="https://www.hltv.org/img/static/flags/30x20/UA.gif"
+                      style="height: 0.9em"
+                      alt=""
+                    />
+                    <p>w0nderful</p>
+                  </div>
+                </a>
+              </div>
+              <div class="bottomblock">
+                <a class="block1" href="#">HLTV Team profile</a>
+                <a class="block2" href="#">Ranking details</a>
+              </div>
+            </div>
+            <div class="placeblock">
+              <a href="#" class="placehead">
+                <div class="leftblock">
+                  <p class="place">#2</p>
+                  <img
+                    src="https://img-cdn.hltv.org/teamlogo/zFLwAELOD15BjJSDMMNBWQ.png?ixlib=java-2.1.0&w=100&s=88aeba1564bc27de69fb2302e47e1a7c"
+                    style="height: 2em; margin: 1em 0.5em 1em 0"
+                    alt=""
+                  />
+
+                  <div class="infoshort">
+                    <div class="upper">
+                      <p style="margin-right: 0.3em">G2</p>
+                      <p class="points">(597 HLTV points)</p>
+                    </div>
+                    <div class="lower">
+                      <div class="nickname"><span> Snax • </span></div>
+                      <div class="nickname"><span> NiKo • </span></div>
+                      <div class="nickname"><span> huNter • </span></div>
+                      <div class="nickname"><span> malbsMd • </span></div>
+                      <div class="nickname" style="margin-right: 0">
+                        <span> mONESY </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rightblock">
+                  <p>-</p>
+                </div>
+              </a>
+            </div>
+            <div class="placeblock">
+              <a href="#" class="placehead">
+                <div class="leftblock">
+                  <p class="place">#3</p>
+                  <img
+                    src="https://img-cdn.hltv.org/teamlogo/yeXBldn9w8LZCgdElAenPs.png?ixlib=java-2.1.0&w=100&s=a0731380d1075205aadb30905a49da55"
+                    style="height: 2em; margin: 1em 0.5em 1em 0"
+                    alt=""
+                  />
+
+                  <div class="infoshort">
+                    <div class="upper">
+                      <p style="margin-right: 0.3em">Vitality</p>
+                      <p class="points">(589 HLTV points)</p>
+                    </div>
+                    <div class="lower">
+                      <div class="nickname"><span> apEX • </span></div>
+                      <div class="nickname"><span> ZywOo • </span></div>
+                      <div class="nickname"><span> flameZ • </span></div>
+                      <div class="nickname"><span> Spnix • </span></div>
+                      <div class="nickname" style="margin-right: 0">
+                        <span> mezii </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rightblock">
+                  <p>-</p>
+                </div>
+              </a>
+            </div>
+            <div class="placeblock">
+              <a href="#" class="placehead">
+                <div class="leftblock">
+                  <p class="place">#4</p>
+                  <img
+                    src="https://img-cdn.hltv.org/teamlogo/IejtXpquZnE8KqYPB1LNKw.svg?ixlib=java-2.1.0&s=7fd33b8def053fbfd8fdbb58e3bdcd3c"
+                    style="height: 2em; margin: 1em 0.5em 1em 0"
+                    alt=""
+                  />
+
+                  <div class="infoshort">
+                    <div class="upper">
+                      <p style="margin-right: 0.3em">MOUZ</p>
+                      <p class="points">(461 HLTV points)</p>
+                    </div>
+                    <div class="lower">
+                      <div class="nickname"><span> Brollan • </span></div>
+                      <div class="nickname"><span> siuhy • </span></div>
+                      <div class="nickname"><span> torzsi • </span></div>
+                      <div class="nickname"><span> Jimpphat • </span></div>
+                      <div class="nickname" style="margin-right: 0">
+                        <span> xertioN </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rightblock">
+                  <p style="color: #09c100">+1</p>
+                </div>
+              </a>
+            </div>
+            <div class="placeblock">
+              <a href="#" class="placehead">
+                <div class="leftblock">
+                  <p class="place">#5</p>
+                  <img
+                    src="https://img-cdn.hltv.org/teamlogo/ywdn4tmAvXfllLeV2SkkvF.png?ixlib=java-2.1.0&w=100&s=e441b77b1cafbca20ba9f667caca56f4"
+                    style="height: 2em; margin: 1em 0.5em 1em 0"
+                    alt=""
+                  />
+
+                  <div class="infoshort">
+                    <div class="upper">
+                      <p style="margin-right: 0.3em">Spirit</p>
+                      <p class="points">(418 HLTV points)</p>
+                    </div>
+                    <div class="lower">
+                      <div class="nickname"><span> chopper • </span></div>
+                      <div class="nickname"><span> sh1ro • </span></div>
+                      <div class="nickname"><span> magixx • </span></div>
+                      <div class="nickname"><span> zont1x • </span></div>
+                      <div class="nickname" style="margin-right: 0">
+                        <span> donk </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rightblock">
+                  <p style="color: #fc1d1d">-1</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="funinfo">
+          <a href="#" class="headerAct">
+            <p style="font-weight: bold">RECENT ACTIVITY</p>
+            <p>•••</p>
+          </a>
+          <div class="activity">
+            <a
+              href="#"
+              style="
+                border-left: 2px solid #ffae00;
+                border-bottom: 1px solid #495867;
+              "
+            >
+              <p>iM</p>
+              <p>29</p>
+            </a>
+            <a
+              href="#"
+              style="
+                border-left: 2px solid #e63865;
+                border-bottom: 1px solid #495867;
+              "
+            >
+              <p>kyosouke might be b...</p>
+              <p>13</p></a
+            >
+            <a
+              href="#"
+              style="
+                border-left: 2px solid #ffae00;
+                border-bottom: 1px solid #495867;
+              "
+            >
+              <p>ZywOo how ironic</p>
+              <p>71</p></a
+            >
+            <a
+              href="#"
+              style="
+                border-left: 2px solid #ffae00;
+                border-bottom: 1px solid #495867;
+              "
+            >
+              <p>Team Spirit Conspiracy</p>
+              <p>40</p></a
+            >
+            <a
+              href="#"
+              style="
+                border-left: 2px solid #ffae00;
+                border-bottom: 1px solid #495867;
+              "
+            >
+              <p>Help with my new to...</p>
+              <p>23</p></a
+            >
+            <a
+              href="# "
+              style="
+                border-left: 2px solid #55a528;
+                border-bottom: 1px solid #495867;
+              "
+            >
+              <p>zonic: "The season h...</p>
+              <p>23</p></a
+            >
+            <a
+              href="#"
+              style="
+                border-left: 2px solid #ffae00;
+                border-bottom: 1px solid #495867;
+              "
+            >
+              <p>"a am the bag"</p>
+              <p>16</p></a
+            >
+            <a
+              href="#"
+              style="
+                border-left: 2px solid #ffae00;
+                border-bottom: 1px solid #495867;
+              "
+            >
+              <p>Kick or Twitch?</p>
+              <p>6</p></a
+            >
+            <a
+              href="#"
+              style="
+                border-left: 2px solid #ffae00;
+                border-bottom: 1px solid #495867;
+              "
+            >
+              <p>Kick or Twitch?</p>
+              <p>24</p></a
+            >
+            <a
+              href="#"
+              style="
+                border-left: 2px solid #ffae00;
+                border-bottom: 1px solid #495867;
+              "
+            >
+              <p>Guess the pro player...</p>
+              <p>25</p></a
+            >
+            <a
+              href="#"
+              style="
+                border-left: 2px solid #ffae00;
+                border-bottom: 1px solid #495867;
+              "
+            >
+              <p>s1mple friend doing...</p>
+              <p>139</p></a
+            >
+          </div>
+          <div class="headerAct" style="margin-top: 1em">
+            <p style="font-weight: bold">TOP 30 TRANSFERS</p>
+          </div>
+          <div class="transfers">
+            <div class="trans">
+              <a class="playim" href="#">
+                <img
+                  src="https://img-cdn.hltv.org/playerbodyshot/9rI4tU8fGwLPtW0rF7a3Ow.png?ixlib=java-2.1.0&w=400&s=263e63b7073f86fef9432360837937f8"
+                  alt=""
+                  style="height: 4em"
+                />
+              </a>
+              <a class="teamFrom" href="#">
+                <img
+                  src="https://img-cdn.hltv.org/teamlogo/yZ6Bpuui1rW3jocXQ68XgZ.svg?ixlib=java-2.1.0&s=f39be1d3e7baf30a4e7f0b1216720875"
+                  alt=""
+                  style="height: 3em"
+                />
+                <p style="font-weight: bold; font-size: 12px">BENCH</p>
+              </a>
+              <p style="font-size: 42px">➔</p>
+              <div class="teamFrom">
+                <img
+                  src="https://www.hltv.org/img/static/team/placeholder.svg"
+                  alt=""
+                  style="height: 3em"
+                />
+                <p style="font-weight: bold; font-size: 12px">NO TEAM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

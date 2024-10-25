@@ -1,0 +1,80 @@
+.navbar {
+  display: flex;
+  background-color: #2d3844;
+  justify-content: space-between;
+  padding: 0 0.5em 0 0.5em;
+  height: 2.5em;
+  font-size: 15px;
+}
+
+/* Pages */
+
+.nav-left {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list a {
+  display: block;
+  padding: 0.9em;
+  text-decoration: none;
+  color: #767f85;
+}
+
+/* Search & Settings */
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-search {
+  padding-left: 0.4em;
+  padding-right: 0.6em;
+  display: inline-flex;
+  color: #5d6771;
+  background-color: #364250;
+  border-radius: 5px;
+}
+
+.imgA {
+  display: block;
+  padding-top: 0.2em;
+}
+
+.nav-search input {
+  background: transparent;
+  border: none;
+  margin-right: -1em;
+}
+
+::-webkit-input-placeholder {
+  color: #5d6771;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+.signLink {
+  display: block;
+  text-decoration: none;
+  color: #728aa3;
+  margin: 0 1em 0 0.6em;
+}
+
+.settings {
+  display: inline-flex;
+  padding-top: 0.2em;
+  border-radius: 10px;
+  align-items: center;
+}
